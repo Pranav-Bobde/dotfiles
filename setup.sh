@@ -50,8 +50,10 @@ cp -n "$DOT"/wallpapers/* "$HOME/wallpapers/" || true
 nvim --headless "+Lazy! restore" +qa
 
 step "tmux plugins"
-clone https://github.com/tmux-plugins/tpm "$HOME/.config/tmux/plugins/tpm"
-"$HOME/.config/tmux/plugins/tpm/bin/install_plugins"
+# Plain clones: tpm's own installer uses https://git::@github.com/..., which can hang.
+sed -nE "s/^set -g @plugin '([^']+)'.*/\1/p" "$HOME/.config/tmux/tmux.conf" | while read -r plugin; do
+  clone "https://github.com/$plugin" "$HOME/.config/tmux/plugins/${plugin##*/}"
+done
 
 step "tmux Cmd-hold helper"
 swiftc -O -o "$HOME/.config/tmux/cmd-hold-watch" "$HOME/.config/tmux/cmd-hold-watch.swift"
