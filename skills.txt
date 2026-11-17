@@ -1,0 +1,11 @@
+# Third-party skills installed unchanged from their official repos: <repo> <skill>...
+cursor/plugins bro maintain-verification-skill principle-boundary-discipline principle-build-the-lever principle-experience-first principle-foundational-thinking principle-minimize-reader-load principle-model-the-domain principle-never-block-on-the-human principle-outcome-oriented-execution principle-prove-it-works principle-redesign-from-first-principles principle-separate-before-serializing-shared-state principle-sequence-verifiable-units principle-subtract-before-you-add
+Leonxlnx/taste-skill design-taste-frontend
+effect-ts/skills effect-ts
+ayghri/i-have-adhd i-have-adhd
+dmmulroy/anti-slop install-anti-slop
+vercel-labs/portless portless
+mattpocock/skills prototype
+obra/superpowers test-driven-development
+caldoai/skills untangle-codebase
+vercel-labs/agent-skills web-design-guidelines

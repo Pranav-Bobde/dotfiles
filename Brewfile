@@ -1,0 +1,22 @@
+# Apps go to ~/Applications so installs and updates never need an admin password.
+cask_args appdir: "~/Applications"
+
+brew "zoxide"
+brew "uv"
+brew "fnm"
+brew "fzf"
+brew "ripgrep"
+brew "lazygit"
+brew "gh"
+brew "sesh"
+brew "neovim"
+brew "tmux"
+brew "eza"
+
+cask "wezterm"
+cask "font-jetbrains-mono"
+cask "t3-code"
+cask "raycast"
+cask "alfred"
+cask "anomaly-hex"
+cask "obs"
